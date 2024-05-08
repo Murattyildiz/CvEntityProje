@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Metrics</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type='text/css' />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="total-content">
+        <div class="col-md-9 content">
+            <div class="list_of_members">
+                <div class="sales">
+                    <div class="icon-text">
+                        <h3>15896</h3>
+                        <p>Sales</p>
+                    </div>
+                </div>
+                <div class="new-users">
+                    <div class="icon-text">
+                        <h3>5356</h3>
+                        <p>New Users</p>
+                    </div>
+                </div>
+                <div class="orders">
+                    <div the="icon-text">
+                        <h3>26856</h3>
+                        <p>New Orders</p>
+                    </div>
+                </div>
+                <div class="visitors">
+                    <div class="icon-text">
+                        <h3>85k</h3>
+                        <p>Visits</p>
+                    </div>
+                </div>
+            </div>
+            <div class="to-do">
+                <h3>To-Do</h3>
+                <div class="checkbox-form">
+                    <div class="check">
+                        <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Do the dishes.</label>
+                    </div>
+                    <div class="check">
+                        <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Hit the gym.</label>
+                    </div>
+                    <div class="check">
+                        <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Walk the dog.</label>
+                    </div>
+                    <div class="check">
+                        <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Get wireframing!</label>
+                    </div>
+                    <div class="check">
+                        <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Talk to the cat.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'Sales',
+                    data: [65, 59, 90, 81, 56, 55, 40],
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }, {
+                    label: 'New Orders',
+                    data: [28, 48, 40, 19, 96, 27, 100],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
