@@ -6,9 +6,13 @@ Projede, MSSQL Server veritabanı kullanılmıştır.
 Projede kullanılan yapılar :
 
 MSSQL Server
+
 ASP .NET Entity Framework
+
 Crud İşlemleri
+
 LinQ Expression
+
 
 GÖRSELLER
 ![Resim1](https://github.com/user-attachments/assets/8777e0a8-1ed7-4a00-a10e-d33acc83288b)
