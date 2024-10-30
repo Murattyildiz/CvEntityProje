@@ -1,4 +1,5 @@
 Tanıtım
+
 Bu proje, ASP.NET Entity Framework kullanılarak geliştirilmiş bir web uygulamasıdır.
 Projede, MSSQL Server veritabanı kullanılmıştır.
 
