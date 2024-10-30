@@ -4,6 +4,7 @@ Bu proje, ASP.NET Entity Framework kullanılarak geliştirilmiş bir web uygulam
 Projede, MSSQL Server veritabanı kullanılmıştır.
 
 Projede kullanılan yapılar :
+
 MSSQL Server
 ASP .NET Entity Framework
 Crud İşlemleri
